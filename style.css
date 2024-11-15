@@ -1,0 +1,150 @@
+.navbar-nav .nav-item {
+    margin: 0 50px; /* Space between nav items */ 
+    background-color: #fff; /* Background color */ 
+    color: black; /* Text color */
+    border-radius: 10px;
+ }
+ .nav-nav .nav-item:hover {
+    background-color: #fff; /* Background color on hover */ 
+    color: black; /* Text color on hover */
+    border-radius: 10px;
+ }
+.nav-box { border: 1px solid #fff; /* Box border */ 
+        padding: 10px 20px; /* Padding inside the box */ 
+        border-radius: 10px; /* Rounded corners */ 
+        transition: background-color 0.3s, color 0.3s; /* Transition for hover effect */ } 
+.nav-box:hover { background-color: #fff; /* Background color on hover */ 
+        color: #333; /* Text color on hover */
+        background-color: #fff;
+        border-color: black;
+    }
+@keyframes zoomIn {
+     0% { transform: scale(1); } 
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); } 
+} 
+.bg-image {
+     animation: zoomIn 10s infinite; 
+}
+.carousel-item {
+    height: 960px;
+    width: 100%;
+}
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+}
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    border-radius: 10px;
+}
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+}
+
+.footer p, .footer a {
+    margin: 0;
+    color: #fff;
+}
+
+.footer a:hover {
+    color: #ddd;
+}
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: #fff;
+}
+
+.donation-header {
+    background: linear-gradient(to right, #1a73e8, #4caf50);
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.donation-header h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.donation-header p {
+    font-size: 1.5rem;
+}
+
+.donation-card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.donation-card:hover {
+    transform: translateY(-10px);
+}
+
+.donation-card .card-icon {
+    font-size: 5rem;
+    color: #1a73e8;
+}
+
+.footer {
+    background-image: url("3.png");
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+/* About us Style*/
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #2c3e50;
+}
+
+.content-section {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #2c3e50;
+}
+
+.map-container {
+    position: relative;
+    height: 450px;
+    border: 3px solid #4e73df;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.map-overlay {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(78, 115, 223, 0.8);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    z-index: 1000;
+    font-weight: bold;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}

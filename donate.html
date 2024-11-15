@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate | CIDE-Uganda</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="site-header bg-light text-white py-3 shadow-sm sticky-top">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Logo -->
+            <div class="d-flex align-items-center">
+                <a href="donate.html" class="logo-link d-flex align-items-center">
+                    <img src="logo.png" width="80" height="80" alt="CIDE-Uganda" class="rounded-circle">
+                    <h1 class="site-title ms-3 mb-0 h4"><a href="donate.html" class="text-dark text-decoration-none"><h2 style="color: blue;">CIDE-Uganda</h2></a></h1>
+                </a>
+            </div>
+            <!-- Navigation -->
+            <nav class="navbar navbar-expand-lg">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="btn btn-primary " href="index.html"><h4>Home</h4></a></li>
+                        <li class="nav-item"><a class="btn btn-primary " href="aboutus.html"><h4>About Us</h4></a></li>
+                        <li class="nav-item"><a class="btn btn-primary " href="contact.html"><h4>Contact</h4></a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="header-actions d-flex align-items-center">
+                <a href="donate.html" class="btn btn-primary"><h4>Donate</h4></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="donation-header">
+        <h1>Support Our Mission</h1>
+        <p>Your generosity helps us empower our community and bring hope to those in need.</p>
+    </div>
+
+    <!-- Donation Methods -->
+    <main class="container my-5">
+        <div class="row gy-4">
+            <!-- MTN Mobile Money -->
+            <div class="row-md-4">
+                <div class="card donation-card text-center">
+                    <div class="card-body">
+                        <div class="card-icon mb-3">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="card-title">MTN Mobile Money</h3>
+                        <p class="card-text">Send your donation via MTN Mobile Money:</p>
+                        <h5 class="text-primary"><strong>+256 77000000000</strong></h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-md-4">
+                <div class="card donation-card text-center">
+                    <div class="card-body">
+                        <div class="card-icon mb-3">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="card-title">Airtel Mobile Money</h3>
+                        <p class="card-text">Send your donation via MTN Mobile Money:</p>
+                        <h5 class="text-primary"><strong>+256 74000000000</strong></h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bank Transfer -->
+            <div class="row-md-4">
+                <div class="card donation-card text-center">
+                    <div class="card-body">
+                        <div class="card-icon mb-3">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h3 class="card-title">Bank Transfer</h3>
+                        <p class="card-text">Use these details to make a donation:</p>
+                        <p><strong>Bank Name:</strong> Community Bank Uganda</p>
+                        <p><strong>Account Name:</strong> CIDE Uganda</p>
+                        <p><strong>Account Number:</strong> 1234567890</p>
+                        <p><strong>Branch:</strong> Mukono</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Material Donations -->
+            <div class="row-md-4">
+                <div class="card donation-card text-center">
+                    <div class="card-body">
+                        <div class="card-icon mb-3">
+                            <i class="fas fa-hand-holding-heart"></i>
+                        </div>
+                        <h3 class="card-title">Material Donations</h3>
+                        <p class="card-text">We accept donations such as:</p>
+                        <ul class="list-unstyled">
+                            <li>Clothing</li>
+                            <li>Books</li>
+                            <li>Farming Tools</li>
+                        </ul>
+                        <p>Contact:</p>
+                        <h5 class="text-primary"><strong>CEO</strong></h5>
+                        <h5><strong>Telephoe: +256 763734644</strong></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+<footer class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <!-- Website Logo and Address -->
+                <img src="logo.png" alt="Logo" class="img-fluid Site-Logo" style="width: 80px; height: 60px; margin-left: 100px;">
+                <p class="h5">Community Initiative for Development and Empowerment</p>
+               <strong><p>Nabuuti Sub-County, Mukono District, P.O Box 743 Mukono, Uganda</p></strong> 
+            </div>
+            <div class="col-md-4 text-center" style="margin-top: 60px;">
+                <!-- Time Zone -->
+              <strong><p>Time Zone: <span id="time-zone"></span></p></strong>  
+                <script>
+                    // Display current time and time zone
+                    document.getElementById('time-zone').innerHTML = new Date().toLocaleString('en-UG', { timeZone: 'Africa/Kampala' });
+                </script>
+                   <strong><p>&copy; 2024 - <span id="current-year"></span> </strong> <strong>CIDE-Uganda All rights reserved. <p>Designed and Developed by <a href="https://x.com/@econi_frank" target="_blank" class="text-blue" style="text-decoration: none;">Econi Frank</strong></a></p></p>
+                <script>
+                    // Display current year
+                    document.getElementById('current-year').textContent = new Date().getFullYear();
+              
+                </script>
+            </div>
+            <div class="col-md-4 text-center" style="margin-top: 60px;">
+                <!-- Social Media Links -->
+                <p><strong>Follow us on</strong></p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/econi.frank" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/@econi_frank" class="text-white me-2"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/econi.frank" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/econifarnk" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <!-- Footer Credits -->
+                
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

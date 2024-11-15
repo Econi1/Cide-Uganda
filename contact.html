@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CIDE-Uganda</title>
+        <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    </head>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .header-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #4e73df;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: #2c3e50;
+        }
+
+        .form-section {
+            background: #f8f9fc;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .map-container {
+            position: relative;
+            height: 350px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        footer {
+            background: #4e73df;
+            color: white;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="site-header bg-light text-white py-3 shadow-sm sticky-top">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Logo and Site Branding -->
+            <div class="d-flex align-items-center">
+                <a href="index.html" class="logo-link d-flex align-items-center">
+                    <img src="logo.png" width="80" height="80" alt="CIDE-Uganda" class="rounded-circle">
+                    <h1 class="site-title ms-3 mb-0 h4"><a href="https://www.cideuganda.org/" class="text-dark text-decoration-none"><h2 style="color: blue;">CIDE-Uganda</h2></a></h1>
+                </a>
+            </div>
+            <!-- Navigation --> 
+             <nav class="navbar navbar-expand-lg"> 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> 
+                    <span class="navbar-toggler-icon"></span> 
+                </button> 
+                <div class="collapse navbar-collapse" id="navbarNav"> 
+                    <ul class="navbar-nav ms-auto">
+                         <li class="nav-item"> 
+                            <a class="btn btn-primary" href="index.html"><h4>Home</h4></a> 
+                        </li> 
+                        <li class="nav-item"> 
+                            <a class="btn btn-primary" href="aboutus.html"><h4>About Us</h4></a>
+                         </li> 
+                         <li class="nav-item"> 
+                            <a class="btn btn-primary" href="contact.html"><h4>Contact</h4></a> 
+                        </li> 
+                    </ul> 
+                </div> 
+            </nav>
+
+            <!-- Header Actions -->
+            <div class="header-actions d-flex align-items-center">
+                <a href="donate.html" class="btn btn-primary"><h4>Donate</h4></a>
+            </div>
+        </div>
+
+    </header>
+
+
+    <!-- Contact Us Section -->
+    <section class="row my-5">
+        <h1 class="section-title text-center">Contact Us</h1>
+        <p class="text-center"><strong>Have a question or need help? We’re here to help!</strong> Reach out to us via the form below or visit us in Nabuuti Subcounty, Mukono District.</p>
+        <div class="row align-items-start mt-5" >
+            <!-- Contact Form -->
+            <div class="col-md-6">
+                <div class="form-section">
+                    <form id="contactForm" action="#" method="POST">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your message..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Map Section -->
+            <div class="col-md-6 mt-4 mt-md-0">
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.704157471312!2d32.752047775953276!3d0.3426504640978776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177d859192152615%3A0x554c1a09e0bd6c62!2sNabuuti%2C%20Mukono%2C%20Uganda!5e0!3m2!1sen!2sus!4v1699461543378!5m2!1sen!2sus" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+<footer class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <!-- Website Logo and Address -->
+                <img src="logo.png" alt="Logo" class="img-fluid Site-Logo" style="width: 80px; height: 60px; margin-left: 100px;">
+                <p class="h5">Community Initiative for Development and Empowerment</p>
+               <strong><p>Nabuuti Sub-County, Mukono District, P.O Box 743 Mukono, Uganda</p></strong> 
+            </div>
+            <div class="col-md-4 text-center" style="margin-top: 60px;">
+                <!-- Time Zone -->
+              <strong><p>Time Zone: <span id="time-zone"></span></p></strong>  
+                <script>
+                    // Display current time and time zone
+                    document.getElementById('time-zone').innerHTML = new Date().toLocaleString('en-UG', { timeZone: 'Africa/Kampala' });
+                </script>
+                   <strong><p>&copy; 2024 - <span id="current-year"></span> </strong> <strong>CIDE-Uganda All rights reserved. <p>Designed and Developed by <a href="https://x.com/@econi_frank" target="_blank" class="text-blue" style="text-decoration: none;">Econi Frank</strong></a></p></p>
+                <script>
+                    // Display current year
+                    document.getElementById('current-year').textContent = new Date().getFullYear();
+              
+                </script>
+            </div>
+            <div class="col-md-4 text-center" style="margin-top: 60px;">
+                <!-- Social Media Links -->
+                <p><strong>Follow us on</strong></p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/econi.frank" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/@econi_frank" class="text-white me-2"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/econi.frank" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/econifarnk" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <!-- Footer Credits -->
+                
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
